@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS </title>
+<style>
+.container{
+	display: flex;
+	justify-content: center;
+	background-color: lightgray;
+	padding: 10px;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	margin: 10px;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+.box:hover {
+	width: 80px;
+	height: 80px;
+	background-color: purple;
+	margin: 12px;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+.box:nth-child(0){
+	flex-grow: 2;
+}
+</style>
+</head>
+<body>
+<div class = "container">
+<div class = "box"> 1 </div>
+<div class = "box"> 2 </div>
+<div class = "box"> 3 </div>
+<div class = "box"> 4 </div>
+</div>
+</body>
+</html>
